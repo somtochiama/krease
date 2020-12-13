@@ -5,7 +5,6 @@ import (
 	"github.com/SomtochiAma/krease/pkg/issue"
 	"github.com/spf13/cobra"
 	//log "k8s.io/klog/v2"
-	//"github.com/SomtochiAma/krease/pkg/issue"
 )
 
 var (
