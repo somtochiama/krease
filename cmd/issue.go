@@ -39,13 +39,13 @@ func commentIssues(cmd *cobra.Command, args []string) error {
 
 	issues, err := issue.GetTrackedPRs(cmd.Context(), ghClient, name, repo, labels, milestone)
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println("error while getting issues: ", err)
 	}
 	fmt.Println(len(issues))
 
 	template, err := issue.CreateTemplate(file)
 	for _, eachIssue := range issues {
-		comment, err := issue.ParseTemplate(template, eachIssue.Assignee.GetName())
+		comment, err := issue.ParseTemplate(template, *eachIssue.Assignee.Login)
 		if err != nil {
 			return err
 		}

@@ -35,6 +35,7 @@ func GetTrackedPRs(ctx context.Context,
 	repo string,
 	labels []string,
 	milestone string) ([]*github.Issue, error){
+	fmt.Println(milestone)
 	issues, _, err := ghClient.Issues.ListByRepo(ctx, owner, repo, &github.IssueListByRepoOptions{
 		Labels: labels,
 		Milestone: milestone,
