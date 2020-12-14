@@ -19,7 +19,7 @@ go install
 # Example Usage
 To comment on issues with particular labels for a particular milestone. You have to pass in a file containing a template for the message.
 ```
-krease issue enhancements \
+krease issue <name-of-repository> \
     --labels <labels seperated by commas> \
     --milestone <milestone-number> \
     --token <personal-access-token> \
