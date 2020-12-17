@@ -7,12 +7,12 @@ Currently, it can comment on issues(you can filter by labels and pull request).
 
 1. Get the code
 ```
-go get github.com/nikhita/github-contrib
+go get github.com/SomtochiAma/krease
 ``` 
 
 2. Build
 ```
-cd $GOPATH/src/github.com/nikhita/github-contrib
+cd $GOPATH/src/github.com/SomtochiAma/krease
 go install
 ```
 
