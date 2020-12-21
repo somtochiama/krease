@@ -1,0 +1,6 @@
+Hello @{{.Name}}, 1.20 Docs shadow here.
+
+Does this enhancement work planned for 1.20 require any new docs or modification to existing docs?
+If so, please follows the steps [here](https://kubernetes.io/docs/contribute/new-content/new-features/#open-a-placeholder-pr) to open a PR against `dev-1.20` branch in the `k/website` repo. This PR can be just a placeholder at this time and must be created before **Nov 6th**.
+Also take a look at [Documenting for a release](https://kubernetes.io/docs/contribute/new-content/new-features/#for-developers-or-other-sig-members) to get yourself familiarize with the docs requirement for the release.
+Thank you!
