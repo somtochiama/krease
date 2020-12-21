@@ -30,6 +30,8 @@ func init() {
 	//TODO: Make flags required
 	rootCmd.PersistentFlags().StringVar(&token, "token", "", "personal access token on github")
 	rootCmd.PersistentFlags().StringVar(&name, "name", "", "your github username")
+	_ = IssueCmd.MarkFlagRequired("token")
+	_ = IssueCmd.MarkFlagRequired("name")
 }
 
 // rootCmd represents the base command when called without any subcommands
